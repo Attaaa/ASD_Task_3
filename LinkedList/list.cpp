@@ -45,7 +45,7 @@ void insertFirst(List &L, address P) {
     // NIM : 1301164201
 	
 	next(P) = first(L);
-	prev(first(L) = P;
+	prev(first(L)) = P;
 	     first(L) = P;
 
     //----------------------------------------
