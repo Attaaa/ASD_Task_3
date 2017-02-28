@@ -42,8 +42,11 @@ void insertFirst(List &L, address P) {
     * FS : elemen yang ditunjuk P menjadi elemen pertama pada List L
     */
     //-------------your code here-------------
-    // NIM : 
+    // NIM : 1301164201
 	
+	next(P) = first(L);
+	prev(first(L) = P;
+	     first(L) = P;
 
     //----------------------------------------
 }
@@ -82,10 +85,14 @@ void deleteFirst(List &L, address &P) {
     * FS : elemen pertama di dalam List L dilepas dan disimpan/ditunjuk oleh P
     */
     //-------------your code here-------------
-    // NIM : 
+    // NIM : 1301164201
 
-	
-	
+	P = first(L);
+	first(L) = next(first(L));
+	prev(P) = NULL;
+	prev(first(L)) = NULL;
+	next(P) = NULL;
+
     //----------------------------------------
 }
 
