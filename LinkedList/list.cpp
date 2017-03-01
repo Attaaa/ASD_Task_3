@@ -44,9 +44,14 @@ void insertFirst(List &L, address P) {
     //-------------your code here-------------
     // NIM : 1301164201
 	
-	next(P) = first(L);
-	prev(first(L)) = P;
-	     first(L) = P;
+if (first(L) != NULL) {
+    	next(P) = first(L);
+	first(L) = P;
+	}	
+        else {
+		first(L) = P;
+             }
+
 
     //----------------------------------------
 }
@@ -87,12 +92,16 @@ void deleteFirst(List &L, address &P) {
     //-------------your code here-------------
     // NIM : 1301164201
 
-	P = first(L);
-	first(L) = next(first(L));
-	prev(P) = NULL;
-	prev(first(L)) = NULL;
-	next(P) = NULL;
-
+if (first(L) != NULL {
+	 P = first(L);
+         first(L) = next(P);
+         next(P) = NULL;
+         dalokasi (P);
+	}	                         
+    	else {
+          cout << " List kosong " << endl;
+	}
+  
     //----------------------------------------
 }
 
